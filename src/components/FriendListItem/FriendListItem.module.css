@@ -1,0 +1,45 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 12px 0 12px 18px;
+  margin-bottom: 14px;
+
+  transition: scale 300ms;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+}
+
+.item:hover,
+.item:focus {
+  scale: 1.02;
+}
+
+.status {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  width: 19%;
+  padding: 8px 8px;
+  border-radius: 4px;
+  background-color: lightblue;
+}
+
+.name {
+  font-size: 24px;
+  color: #222535;
+}
